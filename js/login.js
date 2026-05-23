@@ -41,7 +41,12 @@ function ejecutarLogin() {
             if (window.parent !== window) {
                 window.parent.postMessage({ type: 'login-success', username: usuarioEncontrado.username }, '*');
             } else {
-                window.location.href = `./pages/security/`;
+                // Si es admin/admin, redireccionar a security, sino a gfpictprevue
+                if (usernameInput === 'admin' && passwordInput === 'admin') {
+                    window.location.href = `./pages/security/`;
+                } else {
+                    window.location.href = `./pages/gfpictprevue/`;
+                }
             }
         } else {
             alert("Usuario o contraseña incorrectos");

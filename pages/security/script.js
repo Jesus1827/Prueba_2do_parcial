@@ -93,23 +93,7 @@ function navNew() {
 }
 
 function navSave() {
-  const pass = document.getElementById('fPass').value.trim();
-
-  records[current] = {
-    user:   document.getElementById('fUser').value.trim(),
-    pass:   pass || records[current]?.pass || '',
-    nombre: document.getElementById('fNombre').value.trim(),
-    desc:   document.getElementById('fDesc').value.trim(),
-    tipo:   document.querySelector('input[name="tipo"]:checked')?.value || 'Operador'
-  };
-
-  setEditing(false);
-  document.getElementById('fUser').readOnly = true;
-  loadRecord(current);
-  alert('Registro guardado correctamente.');
-  
-  // Redireccionar a pages/gfpictprevue/index.html
-  window.location.href = '../gfpictprevue/index.html';
+  window.location.href = '../../pages/gfpictprevue/';
 }
 
 function navUndo() {
@@ -123,7 +107,5 @@ function navSalir() {
   }
   window.history.back();
 }
-
-// ── INICIO ────────────────────────────────────────────────────────────────
 
 resetFields();
