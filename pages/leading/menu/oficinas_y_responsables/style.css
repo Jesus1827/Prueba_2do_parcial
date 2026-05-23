@@ -7,12 +7,14 @@
 
 body {
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     padding: 0;
-    width: 100%;
-    margin: 0;
+    width: 800px;
+    margin: 0 auto;
 }
 
-/* Contenedor Principal del Formulario */
 .window-container {
     width: 800px;
     background-color: #f0f0f0;
@@ -21,7 +23,6 @@ body {
     overflow: hidden;
 }
 
-/* Encabezados y Barras Azules */
 header {
     background: linear-gradient(to right, #99b4d1, #b8d0e9);
     padding: 5px 10px;
@@ -51,12 +52,10 @@ header {
     letter-spacing: 1px;
 }
 
-/* Cuerpo del Formulario */
 main {
     padding: 20px;
 }
 
-/* Layout Superior: Datos a la izquierda, Botones de acción rápida a la derecha */
 .top-section {
     display: flex;
     gap: 15px;
@@ -74,9 +73,8 @@ main {
     font-weight: bold;
 }
 
-/* Estilos de inputs, selects y textareas */
 input[type="text"], select, textarea {
-    background-color: #ffffe1; /* Amarillo pálido */
+    background-color: #ffffe1;
     border: 1px solid #7f9db9;
     padding: 4px;
     font-size: 14px;
@@ -100,7 +98,6 @@ textarea {
     resize: none;
 }
 
-/* Etiqueta de Estado Activo/Inactivo */
 .status-tag {
     background-color: #ffffe1;
     border: 1px solid #a3a3a3;
@@ -111,7 +108,6 @@ textarea {
     font-weight: normal;
 }
 
-/* Panel de Botones Rápidos Superiores Derechos */
 .side-actions {
     display: flex;
     flex-direction: column;
@@ -140,7 +136,6 @@ textarea {
     cursor: not-allowed;
 }
 
-/* Sección de la Tabla de Responsables */
 .table-container {
     margin-top: 20px;
 }
@@ -173,15 +168,13 @@ td {
     height: 22px;
 }
 
-/* Anchos de columnas basados en la imagen */
-th:nth-child(1) { width: 6%; }  /* Cod. */
-th:nth-child(2) { width: 35%; } /* Responsable */
-th:nth-child(3) { width: 33%; } /* Cargo */
-th:nth-child(4) { width: 10%; } /* CI */
-th:nth-child(5) { width: 8%; }  /* Expedido */
-th:nth-child(6) { width: 8%; }  /* Estado */
+th:nth-child(1) { width: 6%; }
+th:nth-child(2) { width: 35%; }
+th:nth-child(3) { width: 33%; }
+th:nth-child(4) { width: 10%; }
+th:nth-child(5) { width: 8%; }
+th:nth-child(6) { width: 8%; }
 
-/* Contenedor de la Botonera Inferior */
 .footer-controls {
     margin-top: 25px;
     display: flex;
@@ -190,7 +183,6 @@ th:nth-child(6) { width: 8%; }  /* Estado */
     gap: 15px;
 }
 
-/* Recuadro que agrupa los botones principales */
 .action-group-box {
     border: 1px solid #7a96df;
     padding: 8px 12px;
@@ -231,10 +223,6 @@ th:nth-child(6) { width: 8%; }  /* Estado */
     border: 1px solid #000;
     cursor: pointer;
 }
-
-/* ============================================================
-   MODAL / POPUP STYLES
-   ============================================================ */
 
 .modal-overlay {
     position: fixed;
