@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja API</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title">
+        <h1>Baja API</h1>
+        <span>CRUD de la tabla Baja</span>
+    </div>
+
+    <!-- GET -->
+    <div class="card blue">
+
+        <div class="header">
+            <button class="btn-get">CONSEGUIR</button>
+            <span class="route">/api /baja /{id}</span>
+            <span class="desc">Buscar baja por ID</span>
+            <span class="arrow">⌄</span>
+        </div>
+
+        <div class="content">
+
+            <div class="top-btn">
+                <button class="try-btn">Pruébalo</button>
+            </div>
+
+            <h2>Parámetros</h2>
+
+            <div class="campo">
+                <label>identificación</label>
+
+                <p class="required">
+                    * required
+                </p>
+
+                <p class="tipo">
+                    entero ($ int32)
+                </p>
+
+                <input type="number" placeholder="identificación">
+            </div>
+
+            <h2>Respuestas</h2>
+
+            <div class="response">
+
+                <div class="code-title">
+                    <h3>200</h3>
+                    <span>DE ACUERDO</span>
+                </div>
+
+                <select>
+                    <option>*/*</option>
+                    <option>application/json</option>
+                </select>
+
+<pre>
+{
+   "codbaja": 0,
+   "nombrebaja": "string"
+}
+</pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- POST -->
+    <div class="card green">
+
+        <div class="header">
+            <button class="btn-post">CORREO</button>
+            <span class="route">/api /baja</span>
+            <span class="desc">Registrar baja</span>
+            <span class="arrow">⌄</span>
+        </div>
+
+        <div class="content">
+
+            <div class="top-btn">
+                <button class="try-btn">Pruébalo</button>
+            </div>
+
+            <h2>Body JSON</h2>
+
+<pre>
+{
+   "codbaja": 0,
+   "nombrebaja": "string"
+}
+</pre>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

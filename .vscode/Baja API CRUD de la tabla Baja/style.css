@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1722;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:98%;
+    margin:auto;
+    padding:20px;
+}
+
+.title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.title h1{
+    font-size:50px;
+    font-weight:bold;
+}
+
+.title span{
+    font-size:22px;
+}
+
+/* TARJETAS */
+
+.card{
+    border-radius:6px;
+    overflow:hidden;
+    margin-bottom:20px;
+    border:1px solid;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    position:relative;
+    cursor:pointer;
+}
+
+.route{
+    font-size:32px;
+    font-weight:bold;
+    font-family:monospace;
+}
+
+.desc{
+    font-size:22px;
+}
+
+.arrow{
+    position:absolute;
+    right:20px;
+    font-size:35px;
+}
+
+/* CONTENIDO */
+
+.content{
+    display:none;
+    padding:25px;
+    border-top:1px solid #334155;
+}
+
+.card.active .content{
+    display:block;
+}
+
+.top-btn{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.try-btn{
+    background:#1e293b;
+    border:1px solid white;
+    color:white;
+}
+
+/* TEXTO */
+
+h2{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.campo{
+    margin-bottom:20px;
+}
+
+label{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.required{
+    color:red;
+    margin-top:5px;
+}
+
+.tipo{
+    margin-top:5px;
+    color:#cbd5e1;
+}
+
+/* INPUT */
+
+input{
+    margin-top:15px;
+    width:400px;
+    padding:15px;
+    background:#111827;
+    border:1px solid #475569;
+    border-radius:5px;
+    color:white;
+    font-size:18px;
+}
+
+/* RESPONSE */
+
+.code-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.code-title h3{
+    font-size:30px;
+}
+
+select{
+    width:250px;
+    padding:12px;
+    background:#0f172a;
+    color:white;
+    border:2px solid #22c55e;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:20px;
+    border-radius:8px;
+    overflow:auto;
+    font-size:18px;
+}
+
+/* BOTONES */
+
+button{
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* COLORES */
+
+.blue{
+    background:#102947;
+    border-color:#2563eb;
+}
+
+.green{
+    background:#062c26;
+    border-color:#10b981;
+}
+
+.btn-get{
+    background:#60a5fa;
+}
+
+.btn-post{
+    background:#10b981;
+}
