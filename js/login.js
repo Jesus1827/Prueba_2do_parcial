@@ -2,8 +2,10 @@ const userInput = document.getElementById('login-username');
 const passInput = document.getElementById('login-password');
 const loginBtn = document.getElementById('login-confirm');
 
-const GITHUB_JSON_URL = "https://raw.githubusercontent.com/Jesus1827/Prueba_2do_parcial/dev/assets/dataBase/user.json";
+// URL raw de GitHub para el archivo JSON de usuarios
+const GITHUB_JSON_URL = "https://raw.githubusercontent.com/TK-FUISTELS154/pruebas-examen/dev/assets/dataBase/user.json";
 
+// Cargar users desde GitHub JSON
 let users = [];
 
 async function cargarUsers() {
@@ -15,6 +17,7 @@ async function cargarUsers() {
         return true;
     } catch (error) {
         console.error('Error al cargar users desde GitHub:', error);
+        // Usar datos de prueba como fallback
         users = [
             { username: "admin", password: "admin", rol: "admin" },
             { username: "user", password: "user", rol: "user" },
@@ -29,6 +32,7 @@ function ejecutarLogin() {
     const usernameInput = userInput.value;
     const passwordInput = passInput.value;
 
+    // Usar la variable global 'users' desde user.js
     if (typeof users !== 'undefined' && users.length > 0) {
         const usuarioEncontrado = users.find(user =>
             user.username === usernameInput && user.password === passwordInput
@@ -38,9 +42,11 @@ function ejecutarLogin() {
             localStorage.setItem('usuarioNombre', usuarioEncontrado.username);
             localStorage.setItem('usuarioRol', usuarioEncontrado.rol);
             
+            // Enviar mensaje al padre para cerrar el modal
             if (window.parent !== window) {
                 window.parent.postMessage({ type: 'login-success', username: usuarioEncontrado.username }, '*');
             } else {
+                // Si no está en iframe, redirigir normalmente
                 window.location.href = `./pages/${road.loginToGFPICTPREVUE}/`;
             }
         } else {
@@ -52,6 +58,7 @@ function ejecutarLogin() {
     }
 }
 
+// Cargar users al iniciar la página
 cargarUsers();
 
 
