@@ -92,10 +92,6 @@ function navNew() {
   document.getElementById('fUser').focus();
 }
 
-function navSave() {
-  window.location.href = '../../pages/gfpictprevue/';
-}
-
 function navUndo() {
   loadRecord(current);
   setEditing(false);
