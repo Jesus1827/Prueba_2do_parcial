@@ -41,7 +41,7 @@ function ejecutarLogin() {
             if (window.parent !== window) {
                 window.parent.postMessage({ type: 'login-success', username: usuarioEncontrado.username }, '*');
             } else {
-                window.location.href = `./pages/${road.loginToGFPICTPREVUE}/`;
+                window.location.href = `./pages/security/`;
             }
         } else {
             alert("Usuario o contraseña incorrectos");
