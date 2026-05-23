@@ -12,12 +12,13 @@ body {
     align-items: flex-start;
     padding: 0;
     width: 800px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 /* Contenedor Principal del Formulario */
 .window-container {
     width: 800px;
+    min-height: 600px;
     background-color: #f0f0f0;
     border: 2px solid #7a96df;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
