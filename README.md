@@ -50,7 +50,7 @@ la_paja_del_cochalo/
 Rama dev: Rama principal del proyecto.
 
 ```bash
-git clone -b dev https://github.com/Jesus1827/la_paja_del_cochalo
+git clone -b dev https://github.com/Jesus1827/Prueba_2do_parcial
 ```
 
 Rama login: 
