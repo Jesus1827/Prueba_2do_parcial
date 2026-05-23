@@ -1,5 +1,5 @@
 # La Paja Del Cochalo
-(https://github.com/Jesus1827/Prueba_2do_parcial/blob/dev/assets/img/logo.jpeg)
+![Logo del Proyecto](https://github.com/Jesus1827/Prueba_2do_parcial/blob/dev/assets/img/logo.jpeg)
 
 **Descripcion:** Este es un proyecto diseñado para el desarrollo colaborativo de una aplicación web moderna utilizando tecnologías nativas (Vanilla Stack). El objetivo principal de este repositorio es establecer una arquitectura limpia, modular y escalable que permita a un equipo de desarrolladores Frontend trabajar de forma simultánea sin conflictos.
 
@@ -47,17 +47,5 @@ la_paja_del_cochalo/
 Rama dev: Rama principal del proyecto.
 
 ```bash
-git clone -b dev https://github.com/Jesus1827/la_paja_del_cochalo
-```
-
-Rama login: 
-
-```bash
-git clone -b login https://github.com/Jesus1827/la_paja_del_cochalo
-```
-
-Rama inicio: Estructura basica para el proyecto
-
-```bash
-git clone -b inicio https://github.com/Jesus1827/la_paja_del_cochalo
+git clone -b dev https://github.com/Jesus1827/Prueba_2do_parcial
 ```
