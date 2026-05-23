@@ -1,6 +1,8 @@
 # La Paja Del Cochalo
 ![Logo del Proyecto](https://github.com/Jesus1827/Prueba_2do_parcial/blob/dev/assets/img/logo.jpeg)
 
+**Sitio Web Activo:** [https://jesus1827.github.io/Prueba_2do_parcial/](https://jesus1827.github.io/Prueba_2do_parcial/)
+
 **Descripcion:** Este es un proyecto diseñado para el desarrollo colaborativo de una aplicación web moderna utilizando tecnologías nativas (Vanilla Stack). El objetivo principal de este repositorio es establecer una arquitectura limpia, modular y escalable que permita a un equipo de desarrolladores Frontend trabajar de forma simultánea sin conflictos.
 
 ---
@@ -22,7 +24,7 @@
 Estructura del Proyecto.
 
 ```text
-la_paja_del_cochalo/
+Prueba_2do_parcial/
 ├── assets/              # Archivos estáticos
 │   ├── img/             # Imágenes y SVGs
 │   ├── fonts/           # Tipografías locales
